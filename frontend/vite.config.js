@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/gochiusa_quiz/', // ここをリポジトリ名に変更
+  base: '/gochiusa_quiz/', 
 });
