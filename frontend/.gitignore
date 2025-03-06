@@ -7,12 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
 dist-ssr
 *.local
 
 # Ignore all dist folders except frontend/dist
-dist/
+# dist/ の無視設定を削除し、!frontend/dist/ で例外指定
 !frontend/dist/
 
 # Editor directories and files
