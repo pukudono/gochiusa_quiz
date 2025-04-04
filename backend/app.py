@@ -24,4 +24,5 @@ def all_songs():
     return jsonify(songs)  # `songs_data` ではなく、既存の `songs` をそのまま返す
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
